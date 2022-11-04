@@ -4,6 +4,7 @@ import CurrentWeather from './component/current-weather/current-weather';
 import { WEATHER_API_URL, WEATHER_API_KEY } from './api';
 import { useState } from 'react';
 import ForeCast from './component/forecast/forecast';
+import Footer from './component/social_media/informations';
 
 function App() {
 
@@ -33,12 +34,13 @@ function App() {
   console.log(currentWeather);
   console.log(forecast);
 
+ 
   return (
-    <div className="container">
+      <><div className="container">
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast &&<ForeCast data={forecast} />}
-    </div>
+      {forecast && <ForeCast data={forecast} />}
+    </div><Footer/></>
   );
 }
 

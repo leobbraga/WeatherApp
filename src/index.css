@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: url(../public/sun-in-the-sky.jpg);
   background-size: cover;
+  height: 840px;
 }
 
 code {
